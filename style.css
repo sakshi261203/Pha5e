@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'druk heavy';
+    src: url(fonts/DrukWideBold.ttf);
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #212121; 
+}
+
+.main {
+    position: relative;
+}
+
+h1{
+    font-family: 'druk heavy';
+    color: white;
+    line-height: 100px;
+    font-weight: 200;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+nav{
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin-bottom: 50px;
+}
+a{
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+.nav_right{
+    font-family: 'roboto';
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 50px;
+    font-size: 17px;
+    font-weight: 200;
+}
+span{
+    text-decoration: underline;
+}
+.nav_left{  
+    font-family: 'druk heavy'; 
+    font-size: 25px;
+    margin-left: 40px;
+}
+.image{
+    width: 350px;
+    height: 215px; 
+}
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero img {
+    position: absolute; 
+    transition: 0.5s ease-in-out;
+}
+
+#img1 {
+    top: 2%;
+    right: 20%;
+}
+
+#img2 {
+    top: 15%;
+    left: 11%;
+}
+
+#img3 {
+    bottom: 39%;
+    right: 14%;
+}
+
+#img4 {
+    bottom: 22%;
+    left: 15.7%;
+}
+
+.hero img:hover {
+    z-index: 30;
+}
+
+.hero h1 {
+    transition: color 0.3s ease, -webkit-text-stroke 0.3s ease;
+}
+
+.hero img:hover ~ h1 {
+    color: transparent;
+    -webkit-text-stroke: 2rem rgb(144, 143, 143);
+    mix-blend-mode: difference;
+    z-index: 1;
+}
+
+
+
+
